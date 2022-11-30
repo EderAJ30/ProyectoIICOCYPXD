@@ -44,7 +44,11 @@ void	Diccionario(char* szNombre, char szPalabras[][TAMTOKEN], int iEstadisticas[
 		{
 			caracterszNombre = 0;
 			
-			
+			while (caracterszNombre != ' ' && caracterszNombre != '\0' && caracterszNombre != '	' && caracterszNombre != ',' && caracterszNombre != '.' && caracterszNombre != '(' && caracterszNombre != ')' && caracterszNombre != '¿' && caracterszNombre != '?' && caracterszNombre != '!' && caracterszNombre != '¡')
+			{
+				
+				szpalabrasinorden[numpalabra][caracterszNombre++] = szNombre[caracterszNombre];
+			}
 			
 			caracterszNombre = '\0';
 			numpalabra++;
