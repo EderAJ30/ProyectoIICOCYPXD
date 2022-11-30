@@ -14,12 +14,12 @@ void	Diccionario(char* szNombre, char szPalabras[][TAMTOKEN], int iEstadisticas[
 
 	FILE* archivo;
 
-	fopen_s(&archivo, szNombre, "r");//leer el archivo
-	if (archivo != NULL)//si el archivo si se pudo leer
+	fopen_s(&archivo, szNombre, "r");
+	if (archivo != NULL)
 	{
 		char textoEnBruto[700];
 
-		//Leer todo el archivo hasta su final, guardando todo el texto del mismo en un arr|ay
+		
 		while (!feof(archivo))
 		{
 			for (int i = 0; i != NUMPALABRAS; i++)
