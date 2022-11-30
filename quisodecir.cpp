@@ -1,8 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 #define TAMTOKEN 50
-//#include "stdafx.h"
-//#include "corrector.h"
+
 
 void	Diccionario(char* szNombre, char szPalabras[][TAMTOKEN], int iEstadisticas[], int& iNumElementos)
 {
@@ -24,9 +23,9 @@ void	Diccionario(char* szNombre, char szPalabras[][TAMTOKEN], int iEstadisticas[
 		{
 			for (int i = 0; i != NUMPALABRAS; i++)
 			{
-				//fgets(texto[i], NUMPALABRAS, archivo);
+				
 				fscanf(archivo, "%s", textoEnBruto[i]);
-				//printf("%s\n", texto[i]);
+				
 			}
 			fclose(archivo);
 		}
@@ -40,43 +39,39 @@ void	Diccionario(char* szNombre, char szPalabras[][TAMTOKEN], int iEstadisticas[
 			int frecuencia = 1;
 		}unaPalabra;
 
-		//empezar a separar el array palabra por palabra en un array exclusivo para cada palabra
+		
 		while (szNombre[caracterszNombre] != '\0')
 		{
 			caracterszNombre = 0;
-			//va a evitar tomar como valido cararcteres vacios y signos de puntuación
+			
 			while (caracterszNombre != ' ' && caracterszNombre != '\0' && caracterszNombre != '	' && caracterszNombre != ',' && caracterszNombre != '.' && caracterszNombre != '(' && caracterszNombre != ')' && caracterszNombre != '¿' && caracterszNombre != '?' && caracterszNombre != '!' && caracterszNombre != '¡')
 			{
-				//en este caso lo que pasa es que toma el valor caracterszNombre y despues de usar el valor le suma 1 a el valor
+				
 				szpalabrasinorden[numpalabra][caracterszNombre++] = szNombre[caracterszNombre];
 			}
-			//se salio de este ciclo porque encontro un carater que debe de evitar
+			
 			caracterszNombre = '\0';
 			numpalabra++;
 			if (szNombre[caracterszNombre] != '\0')
 			{
-				/*esta linea es necesaria para hacer que recorra la siguiente casilla del
-				arreglo ya que si se deja en la misma casilla nuca más va entar al while
-				de arriba y solo va almacenar una sola palabra*/
+				
 				caracterszNombre++;
 			}
 		}
-		/*solo va a poder salir del while en cunato acabe el arreglo ahora solo queda ordenar las palabras alfabeticamente e
-		e identificar las palabras que se repiten*/
+		
 		for (int i = 0; i < caracterszNombre; i++)
 		{
 			for (int posicionDelantera = 1; posicionDelantera < caracterszNombre; posicionDelantera++)
 			{
 				if (strcmp(szpalabrasinorden[i], szpalabrasinorden[posicionDelantera]) == 0)
-					/*esto es en caso de que las palabras son iguales, deja vacia a tabla[posicionDelantera] y a la
-					frecuencia le suma 1*/
+					
 				{
 					szpalabrasinorden[posicionDelantera][0] = '\0';
 					unaPalabra.frecuencia++;
 				}
 				else if (strcmp(szpalabrasinorden[i], szpalabrasinorden[posicionDelantera]) > 0)
 				{
-					strcpy(arrayAxiliar, szpalabrasinorden[i]);//guardo el valor en un array para que no se me pierda
+					strcpy(arrayAxiliar, szpalabrasinorden[i]);
 					strcpy(szpalabrasinorden[i], szpalabrasinorden[posicionDelantera]);
 					strcpy(szpalabrasinorden[posicionDelantera], arrayAxiliar);
 				}
@@ -84,7 +79,7 @@ void	Diccionario(char* szNombre, char szPalabras[][TAMTOKEN], int iEstadisticas[
 		}
 
 	}
-	else//si no se pudo leer el archivo
+	else
 	{
 		printf("No fue posible leer el archivo, verifique que este en la capeta mecionada o que no este vacío ni corrupto.");
 	}
