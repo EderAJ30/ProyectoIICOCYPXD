@@ -21,12 +21,7 @@ void	Diccionario(char* szNombre, char szPalabras[][TAMTOKEN], int iEstadisticas[
 		
 		while (!feof(archivo))
 		{
-			for (int i = 0; i != NUMPALABRAS; i++)
-			{
-				
-				fscanf(archivo, "%s", textoEnBruto[i]);
-				
-			}
+			
 			fclose(archivo);
 		}
 
