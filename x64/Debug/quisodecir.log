@@ -1,0 +1,21 @@
+﻿  Corrector.cpp
+C:\Users\edera\Downloads\proyecto cyp\quisodecirAlumnosVisual2019\quisodecirAlumnos\quisodecir\Corrector.cpp(29,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\edera\Downloads\proyecto cyp\quisodecirAlumnosVisual2019\quisodecirAlumnos\quisodecir\Corrector.cpp(57,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\edera\Downloads\proyecto cyp\quisodecirAlumnosVisual2019\quisodecirAlumnos\quisodecir\Corrector.cpp(75,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  quisodecir.cpp
+C:\Users\edera\source\repos\quisodecir\quisodecir\quisodecir.cpp(25,25): error C2065: 'NUMPALABRAS': identificador no declarado
+C:\Users\edera\source\repos\quisodecir\quisodecir\quisodecir.cpp(28,21): warning C4477: 'fscanf' : la cadena de formato '%s' requiere un argumento de tipo 'char *', pero el argumento variádico 1 tiene el tipo 'int'
+C:\Users\edera\source\repos\quisodecir\quisodecir\quisodecir.cpp(35,39): warning C4838: la conversión de 'int' en 'char' requiere una conversión de restricción
+C:\Users\edera\source\repos\quisodecir\quisodecir\quisodecir.cpp(35,57): warning C4305: 'inicializando': truncamiento de 'int' a 'char'
+C:\Users\edera\source\repos\quisodecir\quisodecir\quisodecir.cpp(35,39): warning C4309: 'inicializando': truncamiento de valor constante
+C:\Users\edera\source\repos\quisodecir\quisodecir\quisodecir.cpp(35,46): warning C4838: la conversión de 'int' en 'char' requiere una conversión de restricción
+C:\Users\edera\source\repos\quisodecir\quisodecir\quisodecir.cpp(35,46): warning C4309: 'inicializando': truncamiento de valor constante
+C:\Users\edera\source\repos\quisodecir\quisodecir\quisodecir.cpp(12,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\edera\source\repos\quisodecir\quisodecir\quisodecir.cpp(28,5): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\edera\source\repos\quisodecir\quisodecir\quisodecir.cpp(79,6): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\edera\source\repos\quisodecir\quisodecir\quisodecir.cpp(80,6): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\edera\source\repos\quisodecir\quisodecir\quisodecir.cpp(81,6): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\edera\source\repos\quisodecir\quisodecir\quisodecir.cpp(105,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\edera\source\repos\quisodecir\quisodecir\quisodecir.cpp(117,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\edera\source\repos\quisodecir\quisodecir\quisodecir.cpp(140,10): fatal  error C1083: No se puede abrir el archivo incluir: 'stdafx.h': No such file or directory
+  Generando código...
