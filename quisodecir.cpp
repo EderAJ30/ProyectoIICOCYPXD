@@ -1,6 +1,6 @@
 #include <string.h>
 #include <stdio.h>
-#define TAMTOKEN 50
+
 
 
 void	Diccionario(char* szNombre, char szPalabras[][TAMTOKEN], int iEstadisticas[], int& iNumElementos)
