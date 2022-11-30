@@ -7,10 +7,10 @@
 void	Diccionario(char* szNombre, char szPalabras[][TAMTOKEN], int iEstadisticas[], int& iNumElementos)
 {
 
-	//Sustituya estas lineas por su código
+	
 	iNumElementos = 1;
 	strcpy(szPalabras[0], "AquiVaElDiccionario");
-	iEstadisticas[0] = 1; // la primer palabra aparece solo una vez.
+	iEstadisticas[0] = 1; 
 
 	FILE* archivo;
 
