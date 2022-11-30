@@ -86,6 +86,7 @@ void	Diccionario(char* szNombre, char szPalabras[][TAMTOKEN], int iEstadisticas[
 }
 
 int numero1;
+int numero2;
 
 void	ListaCandidatas(
 	char	szPalabrasSugeridas[][TAMTOKEN],	//Lista de palabras clonadas
