@@ -59,7 +59,24 @@ void	Diccionario(char* szNombre, char szPalabras[][TAMTOKEN], int iEstadisticas[
 			}
 		}
 		
-		
+		for (int i = 0; i < caracterszNombre; i++)
+		{
+			for (int posicionDelantera = 1; posicionDelantera < caracterszNombre; posicionDelantera++)
+			{
+				if (strcmp(szpalabrasinorden[i], szpalabrasinorden[posicionDelantera]) == 0)
+					
+				{
+					szpalabrasinorden[posicionDelantera][0] = '\0';
+					unaPalabra.frecuencia++;
+				}
+				else if (strcmp(szpalabrasinorden[i], szpalabrasinorden[posicionDelantera]) > 0)
+				{
+					strcpy(arrayAxiliar, szpalabrasinorden[i]);
+					strcpy(szpalabrasinorden[i], szpalabrasinorden[posicionDelantera]);
+					strcpy(szpalabrasinorden[posicionDelantera], arrayAxiliar);
+				}
+			}
+		}
 
 	}
 	else
